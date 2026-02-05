@@ -1,320 +1,147 @@
-/* Project: Fryznet Portfolio - Cyber-Industrial Edition
-   Theme: Retro-Futuristic (Neon Green & Dark Amber)
-   Designer: Senior Web Designer
-*/
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyPortofolio - Fryznet</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/logos.png" />
+  </head>
+  <body>
+    <!-- Bagian Navigasi -->
+    <header>
+      <nav>
+        <div class="logo"><span>Fryznet</span></div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#proyek">Proyek</a></li>
+          <li><a href="#medsos">Medsos</a></li>
+        </ul>
+      </nav>
+    </header>
 
-@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Share+Tech+Mono&family=Outfit:wght@300;400;700&display=swap');
+    <!-- Bagian Home -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p>Hi, Welcome to My Website</p>
+        <h1>Fryznet</h1>
+        <p>
+          Website ini berisi tentang portfolio saya sebagai pelajar kelas XII
+          yang memiliki minat di bidang teknologi komputer.
+        </p>
+        <a href="#about" class="btn-hero">About Me</a>
+      </div>
+      <div class="hero-logo">
+        <img src="FreyzaPorto.jpeg" alt="Fryznet" />
+      </div>
+    </section>
 
-:root {
-    --neon-green: #39FF14;
-    --dark-amber: #b8860b; /* Dark Goldenrod / Kuning Gelap */
-    --amber-glow: rgba(184, 134, 11, 0.3);
-    --bg-black: #080808;
-    --surface-dark: #121212;
-    --text-white: #f0f0f0;
-    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
+    <!-- Bagian About -->
+    <section id="about" class="container about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <p>
+          Nama saya <strong>M. Freyza Raafi Pratama</strong> saya seorang pelajar SMA di Surabaya
+          yang memiliki minat dalam bidang teknologi.
+        </p>
+        <p>
+          Saya fokus mengembangkan kemampuan di bidang teknologi dan terus
+          belajar mengikuti perkembangannya. Diluar kesibukan saya sebagai
+          pelajar, saya juga suka berorganisasi dan melihat konser. Saya
+          memiliki hobi bermain basket, futsal, dan memainkan alat musik.
+        </p>
+        <p>
+          Ke depannya, saya ingin terus berkembang dan memanfaatkan teknologi
+          secara positif serta bermanfaat dan dapat berguna bagi bangsa dan
+          negara kedepannya
+        </p>
+      </div>
+    </section>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <!-- Bagian Proyek -->
+    <section id="proyek" class="container bg-light proyek">
+      <h2>Proyek Saya</h2>
+      <div class="proyek-grid">
+        <a href="https://docs.google.com/document/d/1FlCq_DYQqEoTnBbJFa_3e1HmyKhkueZN/edit?usp=drive_link&ouid=114082127343191857200&rtpof=true&sd=true" target="_blank" class="proyek-card">
+          <img src="project1.png" alt="ExcelProject" />
+          <div class="proyek-info">
+            <h3>Excel</h3>
+            <p>My Excel Project</p>
+          </div>
+        </a>
+        <a href="https://www.tinkercad.com/things/6aG6lttb2BV-freyzaxii-2project-trafficlight?sharecode=Gkg6U73SMYG4m52rE4PjZyhEh3T2HrN5vPyWOc7-n4E" target="_blank" class="proyek-card">
+          <img src="project1.png" alt="ArduinoLed" />
+          <div class="proyek-info">
+            <h3>ArduinoLED</h3>
+            <p>Arduino LED Control Project</p>
+          </div>
+        </a>
+        <a href="https://www.tinkercad.com/things/346ECjv5X98-projectlirikfreyza?sharecode=b_QNW2bVSXt_D9oJ8W3Ue-fKggczDrqQ6dCwy-ad6wU" target="_blank" class="proyek-card">
+          <img src="project1.png" alt="ArduinoLyric" />
+          <div class="proyek-info">
+            <h3>Arduino Lirik</h3>
+            <p>Arduino Lyric Display Project</p>
+          </div>
+        </a>
+        <a href="https://drive.google.com/file/d/17O7u7Q2JhlU44vWIRGJNBkKcbmogIVpf/view?usp=drive_link" target="_blank" class="proyek-card">
+          <img src="project1.png" alt="Flowchart Project" />
+          <div class="proyek-info">
+            <h3>Flowchart</h3>
+            <p>My Flowchart Project</p>
+          </div>
+        </a>
+        <a href="https://github.com/fryznet/porto" target="_blank" class="proyek-card">
+          <img src="project1.png" alt="Website Project" />
+          <div class="proyek-info">
+            <h3>Website Sederhana</h3>
+            <p>My Website Project</p>
+          </div>
+        </a>
+        <a href="#" target="_blank" class="proyek-card">
+          <img src="project1.png" alt="PSAJ Project" />
+          <div class="proyek-info">
+            <h3>Website PSAJ</h3>
+            <p>Website PSAJ Non Tulis</p>
+          </div>
+        </a>
+      </div>
+    </section>
 
-body {
-    background-color: var(--bg-black);
-    color: var(--text-white);
-    font-family: 'Outfit', sans-serif;
-    line-height: 1.6;
-    overflow-x: hidden;
-}
+    <!-- Bagian Medsos -->
+    <section id="medsos" class="container medsos">
+      <h2>Media Sosial</h2>
+      <div class="medsos-list">
+        <a
+          href="https://github.com/fryznet"
+          target="_blank"
+          class="medsos-item"
+        >
+          <img src="gbr_github.png" alt="GitHub" />
+          <span>Github</span>
+        </a>
+        <a
+          href="https://instagram.com/freyzaraafi"
+          target="_blank"
+          class="medsos-item"
+        >
+          <img src="gbr_ig.png" alt="Instagram" />
+          <span>Instagram</span>
+        </a>
+        <a
+          href="https://www.tiktok.com/@8za_4rchivee?_r=1&_t=ZS-93fCddBgIhWhttps://www.tiktok.com/@8za_4rchivee?_r=1&_t=ZS-93fCddBgIhWhttps://www.tiktok.com/@8za_4rchivee?_r=1&_t=ZS-93fCddBgIhW"
+          target="_blank"
+          class="medsos-item"
+        >
+          <img src="gbr_tiktok.png" alt="TikTok" />
+          <span>TikTok</span>
+        </a>
+      </div>
+    </section>
 
-/* Element Dekoratif: Background Scanlines & Grid */
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: 
-        linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
-        linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
-    background-size: 100% 4px, 3px 100%;
-    z-index: 100;
-    pointer-events: none;
-}
-
-body::after {
-    content: "";
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background-image: radial-gradient(circle at 50% 50%, transparent 20%, #000 150%),
-                      repeating-linear-gradient(0deg, transparent 0, transparent 40px, rgba(57, 255, 20, 0.02) 40px, rgba(57, 255, 20, 0.02) 41px);
-    z-index: -1;
-}
-
-/* --- Navigasi --- */
-header {
-    background: rgba(8, 8, 8, 0.9);
-    border-bottom: 1px solid var(--dark-amber);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    backdrop-filter: blur(10px);
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 8%;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.logo {
-    font-family: 'Syncopate', sans-serif;
-    font-weight: 700;
-    color: var(--neon-green);
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    text-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 2.5rem;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: var(--dark-amber);
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    transition: var(--transition);
-    letter-spacing: 1px;
-}
-
-nav ul li a:hover {
-    color: var(--neon-green);
-    text-shadow: 0 0 8px var(--neon-green);
-}
-
-/* --- Hero Section --- */
-.hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10%;
-    background: radial-gradient(circle at 80% 20%, rgba(184, 134, 11, 0.05), transparent 40%);
-}
-
-.hero-content p:first-child {
-    font-family: 'Share Tech Mono', monospace;
-    color: var(--dark-amber);
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
-}
-
-.hero-content h1 {
-    font-family: 'Syncopate', sans-serif;
-    font-size: clamp(3rem, 8vw, 6rem);
-    line-height: 0.9;
-    color: var(--text-white);
-    margin-bottom: 1.5rem;
-    position: relative;
-}
-
-.hero-content h1::after {
-    content: "FRYZNET";
-    position: absolute;
-    left: 4px; top: 0;
-    color: var(--neon-green);
-    opacity: 0.3;
-    z-index: -1;
-    animation: glitch 2s infinite;
-}
-
-.btn-hero {
-    display: inline-block;
-    padding: 15px 40px;
-    border: 1px solid var(--neon-green);
-    background: transparent;
-    color: var(--neon-green);
-    text-decoration: none;
-    font-family: 'Share Tech Mono', monospace;
-    text-transform: uppercase;
-    position: relative;
-    overflow: hidden;
-    transition: var(--transition);
-}
-
-.btn-hero:hover {
-    background: var(--neon-green);
-    color: var(--bg-black);
-    box-shadow: 0 0 20px var(--neon-green);
-}
-
-.hero-logo img {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    border: 1px solid var(--dark-amber);
-    filter: sepia(100%) hue-rotate(50deg) contrast(1.2);
-    box-shadow: 0 0 30px var(--amber-glow);
-    animation: float 6s ease-in-out infinite;
-}
-
-/* --- Sections Styling --- */
-.container {
-    padding: 100px 10%;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-h2 {
-    font-family: 'Syncopate', sans-serif;
-    font-size: 2rem;
-    color: var(--neon-green);
-    margin-bottom: 3rem;
-    border-left: 5px solid var(--dark-amber);
-    padding-left: 20px;
-}
-
-/* --- About Me --- */
-.about-content p {
-    font-size: 1.15rem;
-    margin-bottom: 1.5rem;
-    color: #ccc;
-    max-width: 800px;
-}
-
-.about-content strong {
-    color: var(--dark-amber);
-    text-shadow: 0 0 5px var(--amber-glow);
-}
-
-/* --- Proyek Cards --- */
-.proyek-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-}
-
-.proyek-card {
-    background: var(--surface-dark);
-    border: 1px solid #222;
-    text-decoration: none;
-    transition: var(--transition);
-    position: relative;
-}
-
-.proyek-card::before {
-    content: "EXE_01";
-    position: absolute;
-    top: -10px; right: 10px;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 0.7rem;
-    color: var(--dark-amber);
-}
-
-.proyek-card:hover {
-    border-color: var(--neon-green);
-    transform: scale(1.02);
-}
-
-.proyek-card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    filter: grayscale(1);
-    opacity: 0.7;
-    transition: var(--transition);
-}
-
-.proyek-card:hover img {
-    filter: grayscale(0);
-    opacity: 1;
-}
-
-.proyek-info {
-    padding: 20px;
-}
-
-.proyek-info h3 {
-    font-family: 'Share Tech Mono', monospace;
-    color: var(--neon-green);
-    margin-bottom: 10px;
-}
-
-.proyek-info p {
-    color: #888;
-    font-size: 0.9rem;
-}
-
-/* --- Media Sosial --- */
-.medsos-list {
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-}
-
-.medsos-item {
-    text-decoration: none;
-    color: var(--dark-amber);
-    font-family: 'Share Tech Mono', monospace;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: var(--transition);
-}
-
-.medsos-item img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 15px;
-    filter: brightness(0) invert(1) sepia(100%) saturate(500%) hue-rotate(5deg);
-}
-
-.medsos-item:hover {
-    color: var(--neon-green);
-    transform: translateY(-5px);
-}
-
-.medsos-item:hover img {
-    filter: none;
-}
-
-/* --- Footer --- */
-footer {
-    padding: 60px;
-    text-align: center;
-    background: #000;
-    border-top: 1px solid #222;
-    font-family: 'Share Tech Mono', monospace;
-    color: #444;
-}
-
-/* --- Animations --- */
-@keyframes glitch {
-    0% { transform: translate(0); }
-    20% { transform: translate(-5px, 5px); }
-    40% { transform: translate(-5px, -5px); }
-    60% { transform: translate(5px, 5px); }
-    80% { transform: translate(5px, -5px); }
-    100% { transform: translate(0); }
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .hero { flex-direction: column-reverse; text-align: center; padding-top: 50px; }
-    .hero-logo img { width: 250px; height: 250px; }
-    nav ul { display: none; }
-}
+    <!-- Bagian Footer -->
+    <footer>
+      <p>© 2026 FryznetProject</p>
+    </footer>
+  </body>
+</html>
